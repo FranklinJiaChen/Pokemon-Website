@@ -1,0 +1,167 @@
+body{
+    margin: 0px;
+    padding: 0px
+}
+
+.beneath {
+    position: fixed;
+    background-color: rgb(211, 153, 142);
+    width: 100%;
+    height: 50%;
+    margin-top: 12.5%;
+    
+}
+
+.beneath .info{
+    margin-top: 20px;
+    margin-left: 0%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.beneath .flex2{
+    display: flex;
+}
+
+
+.beneath #stat{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.beneath #pokemon{
+    text-align: center;
+    color: black;
+    font-family: monospace;
+    font-size: 28px;
+}
+
+#next-details{
+    display:none;
+}
+
+.beneath .game{
+    margin-left: 0%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#cur-details{
+    font-size: 20px;
+}
+
+.beneath .score .title{
+    text-align: center;
+    color: black;
+    font-family: monospace;
+    font-size: 28px;
+}
+
+.beneath .game p{
+    text-align: center;
+    color: black;
+    font-family: monospace;
+    font-size: 28px;
+}
+
+.top {
+    /* visibility: hidden; */
+    position: fixed;
+    background-color: rgb(167, 50, 29);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    transition: 230ms ease-in-out;
+}
+
+.top .prompt {
+    margin: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.top .prompt+.game-page{
+    position: fixed;
+    margin-top: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.top input {
+    border-radius: 20px;
+    padding-left: 10px;
+    width: 100px;
+    height: 20px;
+    margin-top: 50px;
+}
+
+.bottom {
+    /* visibility: hidden; */
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    transition: 230ms ease-in-out;
+}
+
+.bottom .error {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    visibility: hidden; 
+}
+
+.bottom .buttons {
+    padding-top: 7.5%;
+    position: fixed;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bottom .buttons button{
+    margin-top: -38px;
+    margin-left: -38px;
+    width: 75px;
+    height: 75px;
+}
+
+.center button {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -38px;
+    margin-left: -38px;
+    border-radius: 75px;
+    width: 75px;
+    height: 75px;
+}
+
+button:hover{
+    cursor:pointer;
+}
+
+.info-page{
+    display: none;
+}
+
+.game-page{
+    display: none;
+}

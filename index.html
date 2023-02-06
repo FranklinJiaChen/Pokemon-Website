@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="project2.js" defer></script>
+	<link href="project2.css" type="text/css" rel="stylesheet">
+	
+	<title>Franklin Project 2</title>
+</head>
+<body>
+	<div class="beneath">
+		<div class="info info-page">
+			<div class=flex2>
+				<div id = "stat">
+					<div id="pokemon"></div>
+					<div id="hp"></div>
+					<div id="atk"></div>
+					<div id="def"></div>
+					<div id="spatk"></div>
+					<div id="spdef"></div>
+					<div id="spd"></div>
+				</div>
+				<div class="art"> 
+					<img id="myImage"> </img>
+				</div>
+			</div>
+		</div>
+		<div class="game-page">
+			<div class = "game">
+				<div class="first">
+					<div class="name">
+						<p id="pokemon1"></p>
+					</div>
+					<div class="picture"> 
+						<img id="myImage1"> </img>
+					</div>
+				</div>
+				<div class="score">
+					<p class="title"> Score </p>
+					<p class="value"> 0 </p>
+					<p id="cur-details">
+					</p>
+				</div>
+				<div class="second">
+					<div class="name">
+						<p id="pokemon2"></p>
+					</div>
+					<div class="picture"> 
+						<img id="myImage2"> </img>
+					</div>
+				</div>
+			</div>
+			<p id="next-details">
+			</p>
+		</div>
+	</div>
+	<div class="top">
+
+		<div class="prompt front-page">Enter a Pokemon:<br></div>
+		<div class="prompt game-page">Who is faster?<br></div>
+		<input type="text" id="pokemon-input" class="front-page">
+		
+		
+	</div>
+
+	<div class="bottom">
+		<div class="error front-page"> Invalid Pokemon entered. Please type a Pokemon or "random"</div>
+		<div class="buttons">
+			<button onclick="random()" class="front-page">Random Pokemon</button>
+			<button onclick="game()" class="front-page">Game</button>
+			<button onclick="random()" class="info-page">Random Pokemon</button>
+			<button onclick="pokeball_close()" class="info-page">Close</button>
+			<button onclick="correct_answer()" id="left-button" class="game-page">Left is faster</button>
+			<button onclick="pokeball_close()" class="game-page">Exit game</button>
+			<button onclick="incorrect_answer()" id="right-button" class="game-page">Right is faster</button>
+		</div>
+	</div>
+
+	<div class="center">
+		<button onclick="read_input()" class="front-page">Search</button>
+	</div>
+
+	
+</body>
+</html>
